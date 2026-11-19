@@ -12,7 +12,7 @@ if os.path.isdir(directory_name) == False:
     os.mkdir(directory_name)
 
     for i in range(1, task_number + 1):
-        with open(f"Lab{lab_number}/Lab{lab_number}_Zad0{i}_{surname}.py", "w") as f:
+        with open(f"Lab{lab_number}/Lab{lab_number}_Zad0{i}_{surname}.py", "w", encoding="utf-8") as f:
             f.write(
 f"""# Laboratorium: {lab_number}; Zadanie 0{i}; Autor: {surname} {name} nr albumu {student_id}
 # Oświadczam, że zadanie wykonałem samodzielnie.
